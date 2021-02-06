@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/gradient"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="16dp">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/ngo"
+        android:id="@+id/circleIMG" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:id="@+id/lLlamar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginBottom="5dp"
+                android:src="@drawable/ic_call" />
+
+            <TextView
+                android:layout_width="75dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="0dp"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:text="@string/contact"
+                android:textColor="@color/gray" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lMensaje"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginBottom="5dp"
+                android:src="@drawable/ic_msg" />
+
+            <TextView
+                android:layout_width="75dp"
+                android:layout_height="35dp"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:text="@string/message"
+                android:layout_marginTop="0dp"
+                android:layout_marginStart="2dp"
+                android:textColor="@color/gray"
+                 />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lVideoLlamada"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginBottom="5dp"
+                android:src="@drawable/ic_info" />
+
+            <TextView
+                android:layout_width="75dp"
+                android:layout_height="35dp"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:text="@string/info"
+                android:layout_marginTop="0dp"
+                android:layout_marginStart="2dp"
+                android:textColor="@color/gray" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lInfo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginBottom="5dp"
+                android:src="@drawable/ic_follow" />
+
+            <TextView
+                android:layout_width="75dp"
+                android:layout_height="35dp"
+                android:textSize="15sp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:text="@string/follow"
+                android:layout_marginTop="0dp"
+                android:layout_marginStart="2dp"
+                android:textColor="@color/gray" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
