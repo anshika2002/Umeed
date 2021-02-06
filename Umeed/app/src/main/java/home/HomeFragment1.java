@@ -30,6 +30,7 @@ import java.util.ArrayList;
 public class HomeFragment1 extends Fragment {
     private static final String TAG= "HomeFragment1";
     RecyclerView rv;
+    String caption = null;
     ArrayList<PostModel> pmodel;
     ProgressDialog pd;
     @Nullable
@@ -51,7 +52,12 @@ public class HomeFragment1 extends Fragment {
                     for(DataSnapshot snapshot1 : snapshot.getChildren())
                     {
                         String imgURL = snapshot1.child("ImageUrl").getValue().toString();
-                        String caption = snapshot1.child("Caption").getValue().toString();
+                        if(snapshot1.hasChild("Caption"))
+                        {
+                            caption = snapshot1.child("Caption").getValue().toString();
+                        }
+                        else
+                            caption = null;
                         pmodel.add(new PostModel(imgURL,caption));
                     }
                     PostAdapter1 postAdapter = new PostAdapter1(getContext(),pmodel);
