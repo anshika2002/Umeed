@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    tools:context=".Form">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#CCFF99"
+        android:text="Send Message To NGO"
+        android:textColor="@color/gray"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        />
+
+    <EditText
+        android:layout_width="300dp"
+        android:hint="Enter Your Name"
+        android:textSize="16dp"
+        android:id="@+id/enter_name"
+        android:textColorHint="@color/lightgrey"
+        android:textColor="@color/black"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        />
+
+
+    <EditText
+        android:layout_width="300dp"
+        android:hint="City"
+        android:textSize="16dp"
+        android:id="@+id/enter_city"
+        android:textColorHint="@color/lightgrey"
+        android:textColor="@color/black"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="0dp"
+        />
+
+    <EditText
+        android:layout_width="300dp"
+        android:hint="Pin-Code"
+        android:inputType="number"
+        android:textSize="16dp"
+        android:id="@+id/enter_pin"
+        android:textColorHint="@color/lightgrey"
+        android:textColor="@color/black"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="0dp"
+        />
+
+    <EditText
+        android:layout_width="300dp"
+        android:hint="Mob. Number"
+        android:inputType="number"
+        android:textSize="16dp"
+        android:id="@+id/enter_phone"
+        android:textColorHint="@color/lightgrey"
+        android:textColor="@color/black"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="0dp"
+        />
+
+    <EditText
+        android:layout_width="300dp"
+        android:hint="E-mail Address"
+        android:id="@+id/enter_email"
+        android:inputType="textEmailAddress"
+        android:textSize="16dp"
+        android:textColorHint="@color/lightgrey"
+        android:textColor="@color/black"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="0dp"
+        />
+
+
+   <RadioGroup
+       android:layout_width="308dp"
+       android:layout_height="50dp"
+       android:gravity="left"
+       android:layout_marginStart="48dp"
+       android:orientation="horizontal"
+       android:id="@+id/rg">
+
+           <RadioButton
+               android:id="@+id/radioButton"
+               android:layout_width="wrap_content"
+               android:layout_height="50dp"
+               android:text="Male"
+               android:textColor="@color/black" />
+
+           <RadioButton
+               android:id="@+id/radioButton2"
+               android:layout_width="wrap_content"
+               android:layout_height="50dp"
+               android:text="Female"
+               android:textColor="@color/black" />
+           <RadioButton
+               android:id="@+id/radioButton3"
+               android:layout_width="wrap_content"
+               android:layout_height="50dp"
+               android:text="Prefer not to say"
+               android:textColor="@color/black" />
+   </RadioGroup>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="300dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="300dp"
+            android:layout_gravity="center"
+            android:id="@+id/enter_message"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/lightgrey"
+            android:hint="Write your message" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_height="45dp"
+        android:textColor="@color/gray"
+        android:background="@drawable/round_btn"
+        android:text="Send Message!!!" />
+
+
+</LinearLayout>
