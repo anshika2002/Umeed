@@ -3,11 +3,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.test.onboardingscreen">
 
-    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
-    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission. ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@color/white"
@@ -16,8 +17,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".FullPost"/>
-        <activity android:name=".EmailAuth"/>
+        <activity android:name=".Sosactivity"></activity>
+        <activity android:name=".FullPost" />
+        <activity android:name=".EmailAuth" />
         <activity android:name=".CircularGauge" />
         <activity android:name=".QuestionActivity" />
         <activity android:name="Profile.ProfileActivity" />
@@ -34,11 +36,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Form">
-
-        </activity>
+        <activity android:name=".Form"></activity>
         <activity android:name=".MainActivity" />
         <activity android:name=".ChatMainActivity" />
+        <service android:name=".shake"></service>
     </application>
 
 </manifest>
