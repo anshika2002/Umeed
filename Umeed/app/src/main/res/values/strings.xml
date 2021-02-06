@@ -1,3 +1,33 @@
 <resources>
-    <string name="app_name">Umeed</string>
+    <string name="app_name">Ummeed</string>
+    <string name="next">Next</string>
+    <string name="skip">Skip</string>
+    <string name="AgainstRape">Voice Against Rape</string>
+    <string name="Rape"> Justice for rape victims </string>
+    <string name="sport">sport</string>
+    <string name="MentalHealthSupport">Support Mental Health</string>
+    <string name="travel">travel</string>
+    <string name="StopDomesticViolence">Stop Domestic Violence</string>
+    <string name="DomesticViolence"> There is no excuse for domestic violence </string>
+    <string name="MentalHealth"> Mental Health is Important </string>
+    <string name="opening">opening</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="edit_profile">Edit Profile</string>
+    <string name="sign_out">Sign Out</string>
+
+    <string name="the_center_caters_to_domestic_and_sexual_violence_victims">The Center caters to domestic and sexual violence victims.</string>
+    <string name="action_aid_india">Action Aid India</string>
+    <string name="follow">Follow</string>
+    <string name="message">Message</string>
+    <string name="call">Call</string>
+    <string name="home">Home</string>
+    <string name="search">Search</string>
+    <string name="post">Post</string>
+    <string name="list_of_ngos">List of NGOs</string>
+    <string name="profile">Profile</string>
+    <string name="contact">Contact</string>
+    <string name="info">Info</string>
+
 </resources>
