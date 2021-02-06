@@ -1,21 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.example.test.onboardingscreen">
+
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@color/white"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@mipmap/blue_brain"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Umeed">
-        <activity android:name=".MainActivity">
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".FullPost"/>
+        <activity android:name=".EmailAuth"/>
+        <activity android:name=".CircularGauge" />
+        <activity android:name=".QuestionActivity" />
+        <activity android:name="Profile.ProfileActivity" />
+        <activity android:name="list_ngo.list_of_ngo" />
+        <activity android:name=".AddPost" />
+        <activity android:name="post.post_social" />
+        <activity android:name="network.network_social" />
+        <activity android:name="Profile.AccountSettingsActivity" />
+        <activity android:name="home.social_media" />
+        <activity android:name=".WelcomeActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".Form">
+
+        </activity>
+        <activity android:name=".MainActivity" />
+        <activity android:name=".ChatMainActivity" />
     </application>
 
 </manifest>
